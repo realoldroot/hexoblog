@@ -6,8 +6,8 @@ tags: mysql
 
 
 
-wagon-maven-plugin，用来把打包之后的文件发送到服务器上
-```Java
+wagon-maven-plugin,用来把打包之后的文件发送到服务器上
+```xml
 <plugin>
 	<groupId>org.codehaus.mojo</groupId>
 	<artifactId>wagon-maven-plugin</artifactId>
@@ -21,3 +21,4 @@ wagon-maven-plugin，用来把打包之后的文件发送到服务器上
 	</configuration>
 </plugin>
 ```
+就是参照了linux的scp命令,当然如果使用的是mac的话,可以在终端直接实现.

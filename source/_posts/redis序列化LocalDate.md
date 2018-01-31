@@ -39,10 +39,10 @@ public class Demo {
 ```java
 @Test
 public void test1() {
-     Demo demo = new Demo();
-     demo.setId(10000000001L);
-     demo.setName("测试序列化");
-     demo.setTime(LocalDateTime.now());
+    Demo demo = new Demo();
+    demo.setId(10000000001L);
+    demo.setName("测试序列化");
+    demo.setTime(LocalDateTime.now());
     redisTemplate.opsForValue().set("test", demo);
  }
 ```
@@ -95,7 +95,7 @@ Caused by: com.fasterxml.jackson.databind.JsonMappingException: Can not construc
 ......
 ```
 这个问题真的是纠结了几天。。。解决办法
-mavan需要的jar包
+maven需要的jar包
 
 ```xml
 <dependency>

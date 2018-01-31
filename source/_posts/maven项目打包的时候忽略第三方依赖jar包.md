@@ -9,7 +9,7 @@ tags: maven
 因为项目需要经常性的修改-打包-上传到服务器，包含lib的war包比较大，第三方jar包基本不会大动，所以就想把这些jar包移出war包，放在jetty里面，这样每次只需要编译打包源码即可，war包大小极度减小，方便上传。
 maven配置
 
-```
+```xml
 <plugin>
   <groupId>org.apache.maven.plugins</groupId>
     <artifactId>maven-war-plugin</artifactId>

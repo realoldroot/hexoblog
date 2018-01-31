@@ -4,10 +4,9 @@ date: 2017-05-05 14:50:23
 tags: springBoot
 ---
 
+
 ```java
-
-private CorsConfiguration buildConfig() { 
-
+public CorsConfiguration buildConfig() { 
     CorsConfiguration corsConfiguration = new CorsConfiguration(); 
     corsConfiguration.addAllowedOrigin("*"); 
     corsConfiguration.addAllowedHeader("*"); 
